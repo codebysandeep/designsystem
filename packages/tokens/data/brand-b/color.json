@@ -1,16 +1,41 @@
 {
   "color": {
+    "$type": "color",
     "primary": {
-      "value": "#22CC88"
+      "$value": "#008060",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "color",
+        "group": "brand-b",
+        "scopes": []
+      }
     },
     "secondary": {
-      "value": "#FF5577"
+      "$value": "#FFC107",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "color",
+        "group": "brand-b",
+        "scopes": []
+      }
     },
     "background": {
-      "value": "#F5F5F5"
+      "$value": "#F9F9F9",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "color",
+        "group": "brand-b",
+        "scopes": []
+      }
     },
     "text": {
-      "value": "#222222"
+      "$value": "#1A1A1A",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "color",
+        "group": "brand-b",
+        "scopes": []
+      }
     }
   }
 }

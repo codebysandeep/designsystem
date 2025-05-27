@@ -1,12 +1,35 @@
 {
   "tailwind": {
+    "$type": "tailwind",
     "theme": {
       "colors": {
-        "primary": "#0055FF",
-        "secondary": "#FFAA00"
+        "primary": {
+          "$value": "#0055FF",
+          "collection": "brand-a",
+          "attributes": {
+            "category": "tailwind",
+            "group": "brand-a",
+            "scopes": []
+          }
+        },
+        "secondary": {
+          "$value": "#FFAA00",
+          "collection": "brand-a",
+          "attributes": {
+            "category": "tailwind",
+            "group": "brand-a",
+            "scopes": []
+          }
+        }
       },
       "fontFamily": {
-        "sans": "Roboto, sans-serif"
+        "sans": "Roboto, sans-serif",
+        "collection": "brand-a",
+        "attributes": {
+          "category": "tailwind",
+          "group": "brand-a",
+          "scopes": []
+        }
       }
     }
   }

@@ -1,16 +1,35 @@
 {
   "mui": {
+    "$type": "mui",
     "palette": {
       "primary": {
-        "value": "#22CC88"
+        "$value": "#008060",
+        "collection": "brand-b",
+        "attributes": {
+          "category": "mui",
+          "group": "brand-b",
+          "scopes": []
+        }
       },
       "secondary": {
-        "value": "#FF5577"
+        "$value": "#FFC107",
+        "collection": "brand-b",
+        "attributes": {
+          "category": "mui",
+          "group": "brand-b",
+          "scopes": []
+        }
       }
     },
     "typography": {
       "fontFamily": {
-        "value": "Inter"
+        "$value": "Inter",
+        "collection": "brand-b",
+        "attributes": {
+          "category": "mui",
+          "group": "brand-b",
+          "scopes": []
+        }
       }
     }
   }

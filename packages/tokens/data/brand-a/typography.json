@@ -1,16 +1,41 @@
 {
   "typography": {
+    "$type": "typography",
     "fontFamily": {
-      "value": "Roboto, sans-serif"
+      "$value": "Roboto, sans-serif",
+      "collection": "brand-a",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-a",
+        "scopes": []
+      }
     },
     "fontSizeBase": {
-      "value": "16px"
+      "$value": "16px",
+      "collection": "brand-a",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-a",
+        "scopes": []
+      }
     },
     "heading1": {
-      "value": "32px"
+      "$value": "32px",
+      "collection": "brand-a",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-a",
+        "scopes": []
+      }
     },
     "body": {
-      "value": "14px"
+      "$value": "14px",
+      "collection": "brand-a",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-a",
+        "scopes": []
+      }
     }
   }
 }

@@ -1,16 +1,35 @@
 {
   "bootstrap": {
+    "$type": "bootstrap",
     "colors": {
       "primary": {
-        "value": "#0055FF"
+        "$value": "#0055FF",
+        "collection": "brand-a",
+        "attributes": {
+          "category": "bootstrap",
+          "group": "brand-a",
+          "scopes": []
+        }
       },
       "secondary": {
-        "value": "#FFAA00"
+        "$value": "#FFAA00",
+        "collection": "brand-a",
+        "attributes": {
+          "category": "bootstrap",
+          "group": "brand-a",
+          "scopes": []
+        }
       }
     },
     "font": {
       "base": {
-        "value": "Roboto, sans-serif"
+        "$value": "Roboto, sans-serif",
+        "collection": "brand-a",
+        "attributes": {
+          "category": "bootstrap",
+          "group": "brand-a",
+          "scopes": []
+        }
       }
     }
   }

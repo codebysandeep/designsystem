@@ -1,16 +1,35 @@
 {
   "mui": {
+    "$type": "mui",
     "palette": {
       "primary": {
-        "value": "#0055FF"
+        "$value": "#0055FF",
+        "collection": "brand-a",
+        "attributes": {
+          "category": "mui",
+          "group": "brand-a",
+          "scopes": []
+        }
       },
       "secondary": {
-        "value": "#FFAA00"
+        "$value": "#FFAA00",
+        "collection": "brand-a",
+        "attributes": {
+          "category": "mui",
+          "group": "brand-a",
+          "scopes": []
+        }
       }
     },
     "typography": {
       "fontFamily": {
-        "value": "Roboto"
+        "$value": "Roboto",
+        "collection": "brand-a",
+        "attributes": {
+          "category": "mui",
+          "group": "brand-a",
+          "scopes": []
+        }
       }
     }
   }

@@ -1,16 +1,41 @@
 {
   "typography": {
+    "$type": "typography",
     "fontFamily": {
-      "value": "Inter, sans-serif"
+      "$value": "Inter, sans-serif",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-b",
+        "scopes": []
+      }
     },
     "fontSizeBase": {
-      "value": "15px"
+      "$value": "15px",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-b",
+        "scopes": []
+      }
     },
     "heading1": {
-      "value": "30px"
+      "$value": "28px",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-b",
+        "scopes": []
+      }
     },
     "body": {
-      "value": "13px"
+      "$value": "13px",
+      "collection": "brand-b",
+      "attributes": {
+        "category": "typography",
+        "group": "brand-b",
+        "scopes": []
+      }
     }
   }
 }
