@@ -1,0 +1,16 @@
+{
+  "typography": {
+    "fontFamily": {
+      "value": "Roboto, sans-serif"
+    },
+    "fontSizeBase": {
+      "value": "16px"
+    },
+    "heading1": {
+      "value": "32px"
+    },
+    "body": {
+      "value": "14px"
+    }
+  }
+}

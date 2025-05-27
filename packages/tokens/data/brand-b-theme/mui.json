@@ -1,0 +1,17 @@
+{
+  "mui": {
+    "palette": {
+      "primary": {
+        "value": "#22CC88"
+      },
+      "secondary": {
+        "value": "#FF5577"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "value": "Inter"
+      }
+    }
+  }
+}

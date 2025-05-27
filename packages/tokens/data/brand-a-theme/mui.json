@@ -1,0 +1,17 @@
+{
+  "mui": {
+    "palette": {
+      "primary": {
+        "value": "#0055FF"
+      },
+      "secondary": {
+        "value": "#FFAA00"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "value": "Roboto"
+      }
+    }
+  }
+}

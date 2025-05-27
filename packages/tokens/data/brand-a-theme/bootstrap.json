@@ -1,0 +1,17 @@
+{
+  "bootstrap": {
+    "colors": {
+      "primary": {
+        "value": "#0055FF"
+      },
+      "secondary": {
+        "value": "#FFAA00"
+      }
+    },
+    "font": {
+      "base": {
+        "value": "Roboto, sans-serif"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "typography": {
+    "fontFamily": {
+      "value": "Inter, sans-serif"
+    },
+    "fontSizeBase": {
+      "value": "15px"
+    },
+    "heading1": {
+      "value": "30px"
+    },
+    "body": {
+      "value": "13px"
+    }
+  }
+}

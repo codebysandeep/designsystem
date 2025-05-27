@@ -1,0 +1,13 @@
+{
+  "tailwind": {
+    "theme": {
+      "colors": {
+        "primary": "#0055FF",
+        "secondary": "#FFAA00"
+      },
+      "fontFamily": {
+        "sans": "Roboto, sans-serif"
+      }
+    }
+  }
+}
