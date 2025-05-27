@@ -1,90 +1,124 @@
-# Designsystem
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+# 🧩 My Design System Project
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+This is a **personal design system** project built using modern tools including **Nx**, **Style Dictionary v5**, **Express.js**, **Node.js**, and **AWS**. The goal is to generate and serve **design tokens** for multiple platforms like **Web**, **Android**, and **iOS** in a structured, scalable way.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+---
 
-## Finish your CI setup
+## 🔧 Tools & Technologies
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/7fpEbKI1UL)
+- **[Nx](https://nx.dev/)** – Monorepo build system to manage packages and tooling
+- **[Style Dictionary v5](https://amzn.github.io/style-dictionary/#/)** – Token generator for multiple platforms
+- **[Express.js](https://expressjs.com/)** – Lightweight Node.js framework for building APIs
+- **[Node.js](https://nodejs.org/)** – JavaScript runtime used to run backend services
+- **[AWS](https://aws.amazon.com/)** – Hosting and deployment for the Express server and tokens
 
+---
 
-## Generate a library
+## 🎨 What It Does
 
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+- Centralizes your design decisions using design tokens
+- Uses Style Dictionary to build design tokens in multiple formats:
+  - **Web**: `.css`, `.scss`, `.js`, `.json`
+  - **Android**: `.xml`
+  - **iOS**: `.plist`, `.json`
+- Serves tokens through a custom **Express API**
+- Prepares for deployment on **AWS** to distribute tokens across platforms
+
+---
+
+## 📦 Install
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/your-project.git
+   cd your-project
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+---
+
+## ⚙️ Run the Project
+
+1. **Build design tokens**
+   ```bash
+   nx run tokens:build
+   ```
+
+   This generates the tokens under the `dist/` directory for each platform.
+
+2. **Start the Express API server**
+   ```bash
+   nx serve api
+   ```
+
+   You can now access token endpoints locally (e.g., `http://localhost:3000/tokens/web/css`).
+
+---
+
+## ☁️ Deploy to AWS
+
+To deploy the API server and generated tokens, you can use AWS services such as:
+
+- **Elastic Beanstalk** – Quick setup for Node.js apps
+- **Lambda + API Gateway** – For serverless deployment
+- **EC2** – Manual setup for full control
+- **S3 + CloudFront** – For static hosting of tokens
+
+### Example: Deploy with Elastic Beanstalk
+
+1. **Initialize your EB app**
+   ```bash
+   eb init
+   ```
+
+2. **Create environment and deploy**
+   ```bash
+   eb create my-env
+   eb deploy
+   ```
+
+> Make sure the `dist/` folder is included in your deployment and the API server uses it to serve tokens.
+
+---
+
+## 🗂 Project Structure
+
+```
+my-project/
+├── packages/
+│   ├── tokens/                 # Design token project
+│   │   ├── properties/         # Token source files
+│   │   ├── build.js            # Style Dictionary build script
+│   │   └── dist/               # Generated tokens (css, scss, json, etc.)
+│   └── api/                    # Express.js server
+│       ├── src/
+│       └── main.ts             # Express entry point
+├── nx.json                     # Nx config
+├── package.json                # Root dependencies
+└── README.md
 ```
 
-## Run tasks
+---
 
-To build the library use:
+## 📖 Notes
 
-```sh
-npx nx build pkg1
-```
+- Use **Style Dictionary configuration** to define custom transforms and formats.
+- You can extend the Express API to serve specific formats or token categories.
+- Token updates will require a rebuild before re-deploying.
 
-To run any task with Nx use:
+---
 
-```sh
-npx nx <target> <project-name>
-```
+## 📬 Feedback or Contributions
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+This is a personal project, but if you have suggestions or improvements, feel free to open an issue or contribute via pull requests.
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-## Versioning and releasing
+## 📄 License
 
-To version and release the library use
-
-```
-npx nx release
-```
-
-Pass `--dry-run` to see what would happen without actually releasing the library.
-
-[Learn more about Nx release &raquo;](hhttps://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Keep TypeScript project references up to date
-
-Nx automatically updates TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in `tsconfig.json` files to ensure they remain accurate based on your project dependencies (`import` or `require` statements). This sync is automatically done when running tasks such as `build` or `typecheck`, which require updated references to function correctly.
-
-To manually trigger the process to sync the project graph dependencies information to the TypeScript project references, run the following command:
-
-```sh
-npx nx sync
-```
-
-You can enforce that the TypeScript project references are always in the correct state when running in CI by adding a step to your CI job configuration that runs the following command:
-
-```sh
-npx nx sync:check
-```
-
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+MIT License – Use freely for personal or commercial projects.
