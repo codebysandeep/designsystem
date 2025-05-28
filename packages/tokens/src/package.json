@@ -1,0 +1,49 @@
+{
+  "name": "@codebysandeep/design-tokens",
+  "version": "1.0.0",
+  "description": "Cross-platform design tokens for web, Android, and iOS applications - Enterprise design system foundation",
+  "main": "build/index.js",
+  "type": "module",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "properties",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run clean && node ./build.js",
+    "clean": "rm -rf build",
+    "dev": "npm run build -- --watch"
+  },
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "css",
+    "scss",
+    "javascript",
+    "android",
+    "ios",
+    "web",
+    "cross-platform"
+  ],
+  "author": {
+    "name": "Sandeep Upadhyay",
+    "email": "sandeep@example.com",
+    "url": "https://github.com/codebysandeep"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codebysandeep/designsystem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codebysandeep/designsystem/issues"
+  },
+  "homepage": "https://github.com/codebysandeep/designsystem#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
